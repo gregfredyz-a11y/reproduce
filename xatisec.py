@@ -80,7 +80,7 @@ all_pubs = read_points("allpubs_point.txt")
 '''
 # Base point G
 z = 0
-# Iterate through private keys 0-199
+# Iterate through private keys 0-19
 for i in all_pubs:
     l = (n * i) % 5659563192761508084413547218350839200336357371519716031604788420739928035857
     public_key = scalar_multiply(abs(l), G)
